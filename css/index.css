@@ -21,15 +21,72 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+}
+
+/* specific to about page */
+.about-page .top-content {
+    justify-content: flex-start;
+    padding-bottom: 3%;
+}
+.about-page .middle-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    border: none;
+}
+.about-page .middle-content h2 {
+    padding: .5rem 0;
+}
+.about-page figure {
+    flex: 1;
+    border-bottom: 1px dashed black;
+    margin: 3%;
+    /*my anchor tags aren't respecting
+    their vertical margins. Flex to the
+    rescue*/
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+.about-page figure img {
+    min-width: 300px;
+    width: 100%;
+}
+.about-page figure a {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.about-page .bottom-content {
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+/*nav bar things*/
+header {
+    display: flex;
+    margin-bottom: 4%;
+    color: black;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex: 1;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 ol, ul {
 	list-style: none;
@@ -46,91 +103,88 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 * {
     box-sizing: border-box;
 }
-
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
 p {
     line-height: 1.4;
 }
-
 .container {
     width: 800px;
     margin: 0 auto;
 }
-
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 2%;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/*a giant mess of coloring specific boxes*/
+.box-1 { background-color: teal; }
+.box-2 { background-color: gold; }
+.box-3 { background-color: cadetblue; }
+.box-4 { background-color: coral; }
+.box-5 { background-color: crimson; }
+.box-6 { background-color: forestgreen; }
+.box-7 { background-color: darkorchid; }
+.box-8 { background-color: hotpink; }
+.box-9 { background-color: indigo; }
+.box-10 { background-color: dodgerblue; }
+/*end of mess*/
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
 .bottom-content .text-container {
     padding-right: 4%;
 }
-
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
 footer {
     width: 100%;
     background: black;
 }
-
 footer nav {
     width: 60%;
     display: flex;
@@ -139,8 +193,6 @@ footer nav {
     padding: 20px 2%;
     font-size: 14px;
 }
-
 footer nav a {
     color: white;
-    text-decoration: none;
 }
