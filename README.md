@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+      I'd say it's tags that are descriptive. Tags that don't just put a box around something, but say something about what is inside that box.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+      block displayed elements take up the entire horizontal space on the screen. Inline elemnts can sit next to eachother on the horizontal axis. Block elements push eachother away vertically with margin, padding, etc, inline elements only push eachother away horizontally.
 
 3. What are the 4 areas of the box model?
 
+      inside is the content of the element, then padding around that, then there is the border, and finally a margin.
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+      I literally wrote this in my notebook yesterday morning. The cross axis, ```justify-content``` is the equivalent for the main axis.
+
 5. Explain why git is valuable to a team of developers.
+
+      It maintains a working version of the code, allowing multiple people to only push code to that branch when it works. Allows you to see who wrote what portion of the project (so who to ask if you are stuck). It implicitly keeps a log of changes (commits). If a bug is introduced at some point, you know its something that was changed in the commits since then, instantly narrowing the code you have to look over.  Helps tremendously with merge conflicts.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,7 +60,7 @@ You are expected to be able to answer all these questions. Your responses contri
 - [X] Add your Team Lead as collaborator on Github.
 - [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [X] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push -u origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
@@ -102,6 +112,6 @@ Note: Please make sure you are using flexbox to layout your website. Floats, inl
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] refactor your HTML, make sure it's indented properly, clean, readable, you have written appropriate comments where necessary and that all attributes (required and encouraged) are filled out correctly.  
-* [ ] Ensure your CSS is organized and readable, you've seperated your code by section and that you are using descriptive class names and adding classes in your HTML where styles repeat rather than rewrting the same styles over again
-* [ ] Use a flex item property of your choice when laying out a section of your website, ensure you can explain how and why you've used this property 
+* [X] refactor your HTML, make sure it's indented properly, clean, readable, you have written appropriate comments where necessary and that all attributes (required and encouraged) are filled out correctly.  
+* [X] Ensure your CSS is organized and readable, you've seperated your code by section and that you are using descriptive class names and adding classes in your HTML where styles repeat rather than rewrting the same styles over again
+* [X] Use a flex item property of your choice when laying out a section of your website, ensure you can explain how and why you've used this property 

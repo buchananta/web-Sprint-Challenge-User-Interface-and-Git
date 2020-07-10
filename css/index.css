@@ -46,12 +46,10 @@ body {
 .about-page .middle-content h2 {
     padding: .5rem 0;
 }
-
 .about-page figure {
     flex: 1;
     border-bottom: 1px dashed black;
     margin: 3%;
-
     /*my anchor tags aren't respecting
     their vertical margins. Flex to the
     rescue*/
@@ -59,12 +57,10 @@ body {
     flex-flow: column;
     align-items: flex-start;
 }
-
 .about-page figure img {
     min-width: 300px;
     width: 100%;
 }
-
 .about-page figure a {
     border-radius: 10px;
     border: 2px solid black;
@@ -75,6 +71,7 @@ body {
     flex-flow: column;
     align-items: flex-start;
 }
+
 /*nav bar things*/
 header {
     display: flex;
@@ -87,13 +84,10 @@ nav {
     align-items: flex-end;
     flex: 1;
 }
-
 a {
     text-decoration: none;
     color: black;
 }
-
-
 ol, ul {
 	list-style: none;
 }
@@ -109,31 +103,25 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 * {
     box-sizing: border-box;
 }
-
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
 p {
     line-height: 1.4;
 }
-
 .container {
     width: 800px;
     margin: 0 auto;
 }
-
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -142,29 +130,24 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -174,7 +157,6 @@ p {
     align-items: center;
     justify-content: center;
 }
-
 /*a giant mess of coloring specific boxes*/
 .box-1 { background-color: teal; }
 .box-2 { background-color: gold; }
@@ -193,20 +175,16 @@ p {
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
 .bottom-content .text-container {
     padding-right: 4%;
 }
-
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
 footer {
     width: 100%;
     background: black;
 }
-
 footer nav {
     width: 60%;
     display: flex;
@@ -215,7 +193,6 @@ footer nav {
     padding: 20px 2%;
     font-size: 14px;
 }
-
 footer nav a {
     color: white;
 }
