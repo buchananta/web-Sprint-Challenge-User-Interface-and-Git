@@ -31,6 +31,13 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
+
+/* specific to about page */
+.about-page .top-content {
+    justify-content: flex-start;
+}
+
+
 /*nav bar things*/
 header {
     display: flex;
