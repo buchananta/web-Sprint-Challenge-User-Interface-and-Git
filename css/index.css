@@ -35,9 +35,46 @@ body {
 /* specific to about page */
 .about-page .top-content {
     justify-content: flex-start;
+    padding-bottom: 3%;
+}
+.about-page .middle-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    border: none;
+}
+.about-page .middle-content h2 {
+    padding: .5rem 0;
 }
 
+.about-page figure {
+    flex: 1;
+    border-bottom: 1px dashed black;
+    margin: 3%;
 
+    /*my anchor tags aren't respecting
+    their vertical margins. Flex to the
+    rescue*/
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.about-page figure img {
+    min-width: 300px;
+    width: 100%;
+}
+
+.about-page figure a {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.about-page .bottom-content {
+    flex-flow: column;
+    align-items: flex-start;
+}
 /*nav bar things*/
 header {
     display: flex;
